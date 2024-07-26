@@ -23,13 +23,13 @@ function startGame() {
     attempts += 1;
 
     if (isNaN(guess)) {
-      console.log(`Please enter a valid number.`);
+      alert(`Please enter a valid number.`);
     } else if (guess < randomNumber) {
-      console.log(`Too low! Try again.`);
+      alert(`Too low! Try again.`);
     } else if (guess > randomNumber) {
-      console.log(`Too high! Try again.`);
+      alert(`Too high! Try again.`);
     } else {
-      console.log(
+      alert(
         `Congratulations! You guessed the number in ${attempts} attempts.`
       );
     }
